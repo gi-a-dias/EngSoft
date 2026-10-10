@@ -18,6 +18,9 @@ jobs: #começa aqui O QUE é pra fazer
               #permissão = ler o codigo
 
     steps: #passo a passo dentro desse job
+      - name: Mensagem inicial do deploy #Exercicio 3
+        run: echo "Iniciando o deploy - Giovanna!" #Imprime a mensagem no pipeline
+        
       - uses: actions/checkout@v4 #é o qie vai baixar o codigo do repositorio
 
       - name: Set up Python version #nome que vai ter
